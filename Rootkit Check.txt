@@ -1,0 +1,26 @@
+Rootkit Check
+analyst@cuckoo:~$ sudo ./chkrootkit
+[sudo] password for analyst:
+ROOTDIR is ‘/’
+Checking 'amd’... not found
+Checking 'basename’... not infected
+Checking 'biff’... not found
+Checking 'chfn’... not infected
+Checking 'chsh'... not infected
+Checking 'cron'... not infected
+Checking 'crontab’... not infected
+Checking 'date'... not infected
+Checking 'du'... not infected
+Checking 'dirname'... not infected
+Checking 'echo'... not infected
+Checking 'egrep’... not infected
+Checking 'env'— not infected
+Checking 'find'... not infected
+Checking 'fingerd'... not found
+Checking 'gpm'... not found
+Checking 'grep'... not infected
+Checking 'hdparm’... not infected
+Checking 'su'... not infected
+Checking 'ifconfig'... not infected
+Checking 'inetd’... not tested
+Checking 'inetdconf’... not found

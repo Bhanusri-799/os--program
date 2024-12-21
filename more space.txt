@@ -1,0 +1,18 @@
+[analyst@secOps ~]$ echo "Hello World!" > test.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ ln -s test.txt mytest.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ echo "It's a lovely day!" >> mytest.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ more test.txt
+Hello World!
+It's a lovely day!
+[analyst@secOps ~]$
+[analyst@secOps ~]$ rm test.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ more mytest.txt
+more: stat of mytest.txt failed: No such file or directory
+[analyst@secOps ~]$
+[analyst@secOps ~]$ ls -l mytest.txt
+lrwxrwxrwx 1 analyst analyst 8 May 7 20:17 mytest.txt -> test.txt
+[analyst@secOps ~]$

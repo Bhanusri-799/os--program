@@ -1,0 +1,29 @@
+[analyst@secOps ~]$ cat /etc/snort/snort.conf
+#--------------------------------------------------
+#   VRT Rule Packages Snort.conf
+#
+#   For more information visit us at:
+#      http://www.snort.org                 Snort Website
+#       http://vrt-blog.snort.org/          Sourcefire VRT Blog
+#
+#      Mailing list Contact:    snort-sigs@lists.sourceforge.net
+#      False Positive reports:  fp@sourcefire.com
+#      Snort bugs:              bugs@snort.org
+#
+#      Compatible with Snort Versions:
+#      VERSIONS :2.9.9.0
+#
+#      Snort build options:
+#      OPTIONS : --enable-gre --enable-mpls --enable-targetbased --enable-ppm --enable-perfprofiling --
+enable-zlib --enable-active-response --enable-normalizer --enable-reload --enable-react --enable-
+flexresp3
+
+###################################################
+# Step #1: Set the network variables. For more information, see README.variables
+###################################################
+# Setup the network addresses you are protecting
+###ipvar HOME_NET any
+###ipvar HOME_NET [192.168.0.0/24,192.168.1.0/24]
+ipvar HOME_NET [209.165.200.224/27]
+# Set up the external network addresses. Leave as "any" in most situations
+ipvar EXTERNAL_NET any

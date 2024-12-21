@@ -1,0 +1,34 @@
+Monitoring Service Logs
+[analyst@secOps ~]$ sudo cat /var/log/messages
+Mar 20 15:28:45 secOps kernel: Linux version 4.15.10-1-ARCH (builduser@heftig-18961) (gcc version 7.3.1
+20180312 (GCC)) #1 SMP PREEMPT Thu Mar 15 12:24:34 UTC 2018
+Mar 20 15:28:45 secOps kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=07c6b457-3f39-
+4ddf-bfd8-c169e8a877b2 rw quiet
+Mar 20 15:28:45 secOps kernel: KERNEL supported cpus:
+Mar 20 15:28:45 secOps kernel:   Intel GenuineIntel
+Mar 20 15:28:45 secOps kernel:   AMD AuthenticAMD
+Mar 20 15:28:45 secOps kernel:   Centaur CentaurHauls
+Mar 20 15:28:45 secOps kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Mar 20 15:28:45 secOps kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Mar 20 15:28:45 secOps kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Mar 20 15:28:45 secOps kernel: x86/fpu: xstate_offset[2]: 576, xstate_sizes[2]: 256
+Mar 20 15:28:45 secOps kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using
+'standard' format.
+Mar 20 15:28:45 secOps kernel: e820: BIOS-provided physical RAM map:
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003ffeffff] usable
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x000000003fff0000-0x000000003fffffff] ACPI data
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Mar 20 15:28:45 secOps kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Mar 20 15:28:45 secOps kernel: NX (Execute Disable) protection: active
+Mar 20 15:28:45 secOps kernel: random: fast init done
+Mar 20 15:28:45 secOps kernel: SMBIOS 2.5 present.
+Mar 20 15:28:45 secOps kernel: DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Mar 20 15:28:45 secOps kernel: Hypervisor detected: KVM
+Mar 20 15:28:45 secOps kernel: e820: last_pfn = 0x3fff0 max_arch_pfn = 0x400000000
+Mar 20 15:28:45 secOps kernel: MTRR: Disabled
+Mar 20 15:28:45 secOps kernel: x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Mar 20 15:28:45 secOps kernel: CPU MTRRs all blank - virtualized system.

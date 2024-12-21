@@ -1,0 +1,22 @@
+[analyst@secOps ~]$ ln space.txt space.hard.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ ls -l space*
+-rw-r--r-- 2 analyst analyst 239 May 7 18:18 space.hard.txt
+-rw-r--r-- 2 analyst analyst 239 May 7 18:18 space.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ echo "Testing hard link" >> space.hard.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ ls -l space*
+-rw-r--r-- 2 analyst analyst 257 May 7 18:19 space.hard.txt
+-rw-r--r-- 2 analyst analyst 257 May 7 18:19 space.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ rm space.hard.txt
+[analyst@secOps ~]$
+[analyst@secOps ~]$ more space.txt
+Space... The final frontier…
+These are the voyages of the Starship Enterprise. Its continuing mission:
+- To explore strange new worlds…
+- To seek out new life; new civilizations…
+- To boldly go where no one has gone before!
+Testing hard link
+[analyst@secOps ~]$
